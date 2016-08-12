@@ -1,0 +1,31 @@
+{
+  "name": "mechanicalmusic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melbandit/MechanicalMusic.git"
+  },
+  "author": "Peter Norman and Melissa Sattler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melbandit/MechanicalMusic/issues"
+  },
+  "homepage": "https://github.com/melbandit/MechanicalMusic#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  }
+}
