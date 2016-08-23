@@ -1,67 +1,83 @@
 
-//<><><><><><>ALL SOUNDS IN THEIR BASIC FORM<><><><><><><><><><>//
+// //<><><><><><>ALL SOUNDS IN THEIR BASIC FORM<><><><><><><><><><>//
 
-// // ARPEGIATOR
-// var arp = new Howl({ 
-//   src: ['assets/audio/arp-mm.mp3'],
-//   volume: 0.7,
-//   loop:true,
-//   html5:true,
-//   preload:true
-// });
-// arp.play();
+// KICK
+var kick = new Howl({ 
+  src: ['assets/audio/kick-mm.mp3'],
+ 	html5:true,
+ 	preload:true,
+		loop:1,
+ 		sprite:{
+ 			kick:[0,10000,true]
+ 		}
+});
+kick.play("kick");
 
-// // BASS
-// var bass = new Howl({
-//   src: ['assets/audio/bass-mm.mp3'],
-//   volume: 1,
-//   loop:true,
-//   html5:true,
-//   preload:true
-// });
-// bass.play();
 
-// // KICK DRUM
-// var kick = new Howl({
-//   src: ['assets/audio/kick-mm.mp3'],
-//   volume: 1,
-//   loop:true,
-//   html5:true,
-//   preload:true
-// });
-// kick.play();
+//SNARE
+var snare = new Howl({ 
+  src: ['assets/audio/snare-mm.mp3'],
+ 	
+ 	html5:true,
+ 	preload:true,
+ 	loop:1,
+ 		sprite:{
+ 			snare:[0,10000,true]
+ 		}
+});
+snare.play("snare");
 
-// // SNARE DRUM
-// var snare = new Howl({
-//   src: ['assets/audio/snare-mm.mp3'],
-//   volume: 1,
-//   loop:true,
-//   html5:true,
-//   preload:true
-// });
-// snare.play();
+// HATS
+var hats = new Howl({ 
+  src: ['assets/audio/hats-mm.mp3'],
+ 	html5:true,
+ 	preload:true,
+ 	volume:0.4,
+ 	loop:1,
+ 		sprite:{
+ 			hats:[0,10000,true]
+ 		}
+});
+hats.play("hats");
 
-// // PERCUSSION
-// var percussion = new Howl({
-//   src: ['assets/audio/percussion-mm.mp3'],
-//   volume: 1,
-//   loop:true,
-//   html5:true,
-//   preload:true
-// });
-// percussion.play(); 
+//PERCUSSION
+var percussion = new Howl({ 
+  src: ['assets/audio/percussion-mm.mp3'],
+ 	html5:true,
+ 	preload:true,
+ 	loop:1,
 
-// // HATS
-// var hats = new Howl({
-//   src: ['assets/audio/hats-mm.mp3'],
-//   volume: 0.5,
-//   pan:1.0,
-//   loop:true,
-//   html5:true,
-//   preload:true
-// });
-// hats.play();
-//<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>//
+ 		sprite:{
+ 			percussion:[0,10000,true]
+ 		}
+});
+percussion.play("percussion");
 
-// var id1 = hats.play();
+// ARPEGIATOR
+var arp = new Howl({ 
+  src: ['assets/audio/arp-mm.mp3'],
+ 	html5:true,
+ 	preload:true,
+ 	volume:0.5,
+ 	loop:1,
+ 		sprite:{
+ 			arp:[0,10000,true]
+ 		}
+});
+arp.play("arp");
+
+//BASS
+var bass = new Howl({ 
+  src: ['assets/audio/bass-mm.mp3'],
+ 	html5:true,
+ 	preload:true,
+ 	loop:1,
+ 		sprite:{
+ 			bass:[0,10000,true]
+ 		}
+});
+bass.play("bass");
+
+// //<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>//
+
 
