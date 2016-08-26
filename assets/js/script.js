@@ -14,6 +14,11 @@ updateVolumeBass = function(value) {
   bass.volume(value);
   //alert('after update volume:', bass.volume);
 };
+updateVolumePercussion = function(value) {
+  //alert('before update volume:', bass.volume);
+  percussion.volume(value);
+  //alert('after update volume:', bass.volume);
+};
 
 //============ gear ========
 
@@ -69,6 +74,23 @@ function Calc3(){
     updateVolumeBass(T);
 };
 
+
+//============ gear4 =========
+
+Draggable.create("#gear4",{
+    type: "rotation",
+    bounds:{minRotation:0, maxRotation:360}, //bounds, gives the rotation a max of 1, when on. unlimited when off
+    throwProps: true,
+    onDrag:Calc4 , 
+    onThrowUpdate: Calc4
+});
+
+function Calc4(){
+    //console.log( this.rotation/360 ); 
+    var U = (this.rotation/360).toFixed(2) ;
+    document.getElementById("myText4").innerHTML= U;
+    updateVolumePercussion(U);
+};
 
 
 
