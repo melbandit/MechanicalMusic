@@ -2,7 +2,7 @@
 
 // BASS (Master track that fires all other tracks together.)
 var bass = new Howl({ 
-  src: ['assets/audio/bass-mm.mp3'],
+  src: ['assets/audio/bass-mm.wav'],
  	html5:true,
  	// preload:true, //may need to remove later
  	// loop:1,
@@ -20,7 +20,7 @@ bass.on('end', function(){
 
 //SNARE
 var snare = new Howl({ 
-  src: ['assets/audio/snare-mm.mp3'],
+  src: ['assets/audio/snare-mm.wav'],
  	
  	html5:true,
  	// preload:true, //may need to remove later
@@ -36,7 +36,7 @@ snare.on('load', function(){
 
 //KICK
 var kick = new Howl({ 
-  src: ['assets/audio/kick-mm.mp3'],
+  src: ['assets/audio/kick-mm.wav'],
     
     html5:true,
     // preload:true, //may need to remove later
@@ -52,7 +52,7 @@ kick.on('load', function(){
 
 //HATS
 var hats = new Howl({ 
-  src: ['assets/audio/hats-mm.mp3'],
+  src: ['assets/audio/hats-mm.wav'],
     
     html5:true,
     // preload:true, //may need to remove later
@@ -68,7 +68,7 @@ hats.on('load', function(){
 
 //PERCUSSION
 var percussion = new Howl({ 
-  src: ['assets/audio/percussion-mm.mp3'],
+  src: ['assets/audio/percussion-mm.wav'],
     
     html5:true,
     // preload:true, //may need to remove later
@@ -84,7 +84,7 @@ percussion.on('load', function(){
 
 //ARPEGGIATOR
 var arp = new Howl({ 
-  src: ['assets/audio/arp-mm.mp3'],
+  src: ['assets/audio/arp-mm.wav'],
     
     html5:true,
     // preload:true, //may need to remove later
