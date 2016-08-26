@@ -14,7 +14,7 @@ var kick = new Howl({
 kick.play("kick");
 
 
-//SNARE
+// SNARE
 var snare = new Howl({ 
   src: ['assets/audio/snare-mm.mp3'],
  	
@@ -40,7 +40,7 @@ var hats = new Howl({
 });
 hats.play("hats");
 
-//PERCUSSION
+// PERCUSSION
 var percussion = new Howl({ 
   src: ['assets/audio/percussion-mm.mp3'],
  	html5:true,
@@ -66,7 +66,7 @@ var arp = new Howl({
 });
 arp.play("arp");
 
-//BASS
+// BASS
 var bass = new Howl({ 
   src: ['assets/audio/bass-mm.mp3'],
  	html5:true,
