@@ -66,7 +66,7 @@ function Calc3(){
     //console.log( this.rotation/360 ); 
     var T = (this.rotation/360).toFixed(2) ;
     document.getElementById("myText3").innerHTML= T ;
-    updateVolumeArp(T);
+    updateVolumeBass(T);
 };
 
 
