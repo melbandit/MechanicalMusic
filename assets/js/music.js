@@ -1,3 +1,27 @@
+//------DEBUGGING ZONE----------------//
+// var kick = new Howl({ 
+//   src: ['assets/audio/kick-mm.mp3'],
+//  	html5:true,
+//  	preload:true, 
+// 		loop:1,
+//  		sprite:{
+//  			kick:[0,10000,true]
+//  		}
+// });
+// kick.play("kick");
+// kick.on('end', function(){
+//   console.log('Finished!');
+// });
+//-------END DEBUGGING ZONE-----------//
+
+
+
+
+
+
+
+
+
 
 // //<><><><><><>ALL SOUNDS IN THEIR BASIC FORM<><><><><><><><><><>//
 
@@ -58,7 +82,7 @@ var arp = new Howl({
   src: ['assets/audio/arp-mm.mp3'],
  	html5:true,
  	preload:true,
- 	volume:0.5,
+ 	volume:0.3,
  	loop:1,
  		sprite:{
  			arp:[0,10000,true]
@@ -86,5 +110,6 @@ bass.play("bass");
 //   arp.volume(value);
 //   //alert('after update volume:', sound.volume);
 // }
+
 
 
