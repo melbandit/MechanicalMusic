@@ -35,17 +35,22 @@ snare.on('load', function(){
 });
 
 function playAll(Howl){
-    this.hasLoaded = true; //formerly .hasLoaded
+    console.log("playAll");
+    //this.hasLoaded = true; //formerly .hasLoaded
     //if this doens't work
     //set that variable manually
-    // if(howl == "bass") {
-    //     bass.hasLoaded = true;
-    // } //etc. for each howl name
+    if(Howl == "bass") {
+        bass.hasLoaded = true;
+    } //etc. for each howl name
+    if(Howl == "snare") {
+        snare.hasLoaded = true;
+    }
     //If you need to make your own object, use this bit instead
     // loadedHowls[howl] = true;
     if(snare.hasLoaded && bass.hasLoaded){
         // var htmlItem = document.getElementByID("music-player");
         // htmlItem.setAttribute("play", true);
+        console.log("playAll started");
         bass.play("bass");
         snare.play("snare");
     }
