@@ -46,6 +46,8 @@ function Calc2(){
 
 
 //HELP in CLASS WITH AMANDA
+//IF IT WONT LET YOU ADD hasLoaded to the objects, make an object to hole those values.
+var loadedHowls ={};
 var kick ={
     //hasLoaded: true/false; //hasLoaded made up
     //hasLoaded: false;
@@ -55,12 +57,15 @@ var kick ={
 }
 
 
-function playAll(howls){
+function playAll(howl){
   if (kick.hasLoaded && bass.hasLoaded && arp.hasLoaded){
     //this.hasLoaded = true; //if this doesn't work...
-    if(howls == "bass"){
+    if(howl == "bass"){
         bass.hasLoaded =true;
     }//etc. for each howls name
+
+    loadedHowls[howl]=true;
+
     var htmlItem = document.getElementById("music-player");
     htmlItem.setAttribute("play", true);
     bass.play();
