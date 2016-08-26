@@ -45,38 +45,38 @@ function Calc2(){
 
 
 
-//HELP in CLASS WITH AMANDA
-//IF IT WONT LET YOU ADD hasLoaded to the objects, make an object to hole those values.
-var loadedHowls ={};
-var kick ={
-    //hasLoaded: true/false; //hasLoaded made up
-    //hasLoaded: false;
-    sprite: [0, 100000, true],
-    onLoad: playAll("kick"), //or playAll(this);
-    onEnd: restartAll();//write a function that watches this and when this one ends restart ALL at 0.
-}
+// //HELP in CLASS WITH AMANDA
+// //IF IT WONT LET YOU ADD hasLoaded to the objects, make an object to hole those values.
+// var loadedHowls ={};
+// var kick ={
+//     //hasLoaded: true/false; //hasLoaded made up
+//     //hasLoaded: false;
+//     sprite: [0, 100000, true],
+//     onLoad: playAll("kick"), //or playAll(this);
+//     onEnd: restartAll();//write a function that watches this and when this one ends restart ALL at 0.
+// }
 
 
-function playAll(howl){
-  if (kick.hasLoaded && bass.hasLoaded && arp.hasLoaded){
-    //this.hasLoaded = true; //if this doesn't work...
-    if(howl == "bass"){
-        bass.hasLoaded =true;
-    }//etc. for each howls name
+// function playAll(howl){
+//   if (kick.hasLoaded && bass.hasLoaded && arp.hasLoaded){
+//     //this.hasLoaded = true; //if this doesn't work...
+//     if(howl == "bass"){
+//         bass.hasLoaded =true;
+//     }//etc. for each howls name
 
-    loadedHowls[howl]=true;
+//     loadedHowls[howl]=true;
 
-    var htmlItem = document.getElementById("music-player");
-    htmlItem.setAttribute("play", true);
-    bass.play();
-  }
+//     var htmlItem = document.getElementById("music-player");
+//     htmlItem.setAttribute("play", true);
+//     bass.play();
+//   }
 
-}
+// }
 
-function restartAll(){
-    bass.play();
-    arp.play();
-    kick.play();
-}
+// function restartAll(){
+//     bass.play();
+//     arp.play();
+//     kick.play();
+// }
 
 
