@@ -83,7 +83,7 @@ bass.play("bass");
 //Melissa Updating volume
 // updateVolumeArp = function(value) {
 //   //alert('before update volume:', sound.volume);
-//   arp.volume = value;
+//   arp.volume(value);
 //   //alert('after update volume:', sound.volume);
 // }
 
