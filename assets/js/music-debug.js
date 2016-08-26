@@ -5,9 +5,9 @@ var bass = new Howl({
   src: ['assets/audio/bass-mm.mp3'],
  	html5:true,
  	// preload:true, //may need to remove later
- 	loop:1,
+ 	// loop:1,
  		sprite:{
- 			bass:[0,10000,true]
+ 			bass:[0,10000]//add true if broken
  		}
 });
 bass.on('load', function(){
@@ -24,10 +24,10 @@ var snare = new Howl({
  	
  	html5:true,
  	// preload:true, //may need to remove later
- 	loop:1,
- 		sprite:{
- 			snare:[0,10000,true]
- 		}
+    // loop:1,
+        sprite:{
+            snare:[0,10000]//add true if broken
+        }
 });
 snare.on('load', function(){
   	playAll("snare"); //If "this" doesn't work, use "snare".
