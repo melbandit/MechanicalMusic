@@ -43,3 +43,35 @@ function Calc2(){
 };
 
 
+
+
+//HELP in CLASS WITH AMANDA
+var kick ={
+    //hasLoaded: true/false; //hasLoaded made up
+    //hasLoaded: false;
+    sprite: [0, 100000, true],
+    onLoad: playAll("kick"), //or playAll(this);
+    onEnd: restartAll();//write a function that watches this and when this one ends restart ALL at 0.
+}
+
+
+function playAll(howls){
+  if (kick.hasLoaded && bass.hasLoaded && arp.hasLoaded){
+    //this.hasLoaded = true; //if this doesn't work...
+    if(howls == "bass"){
+        bass.hasLoaded =true;
+    }//etc. for each howls name
+    var htmlItem = document.getElementById("music-player");
+    htmlItem.setAttribute("play", true);
+    bass.play();
+  }
+
+}
+
+function restartAll(){
+    bass.play();
+    arp.play();
+    kick.play();
+}
+
+
