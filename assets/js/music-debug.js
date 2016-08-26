@@ -11,7 +11,8 @@ var bass = new Howl({
  		}
 });
 bass.on('load', function(){
-  	playAll(this); //If "this" doesn't work, use "bass".
+  	playAll("bass"); //If "this" doesn't work, use "bass".
+    console.log("bass loaded");
 });
 bass.on('end', function(){
 	restartAll();
@@ -29,7 +30,8 @@ var snare = new Howl({
  		}
 });
 snare.on('load', function(){
-  	playAll(this); //If "this" doesn't work, use "snare".
+  	playAll("snare"); //If "this" doesn't work, use "snare".
+    console.log("snare loaded");
 });
 
 function playAll(Howl){
