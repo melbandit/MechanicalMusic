@@ -111,7 +111,7 @@ Draggable.create("#gear5",{
 function Calc5(){
     //console.log( this.rotation/360 ); 
     var V = (this.rotation/360).toFixed(2) ;
-    document.getElementById("myText4").innerHTML= V;
+    document.getElementById("myText5").innerHTML= V;
     updateVolumeSnare(V);
 };
 
