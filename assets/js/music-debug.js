@@ -4,14 +4,13 @@
 var bass = new Howl({ 
   src: ['assets/audio/bass-mm.mp3'],
  	html5:true,
- 	// preload:true, //may need to remove later
- 	// loop:1,
+    volume:0, 	
  		sprite:{
- 			bass:[0,10000]//add true if broken
+ 			bass:[0,10000]
  		}
 });
 bass.on('load', function(){
-  	playAll("bass"); //If "this" doesn't work, use "bass".
+  	playAll("bass"); // "bass".
     console.log("bass loaded");
 });
 bass.on('end', function(){
@@ -23,84 +22,74 @@ var snare = new Howl({
   src: ['assets/audio/snare-mm.mp3'],
  	
  	html5:true,
- 	// preload:true, //may need to remove later
-    // loop:1,
+    volume:0,
         sprite:{
-            snare:[0,10000]//add true if broken
+            snare:[0,10000]
         }
 });
 snare.on('load', function(){
-  	playAll("snare"); //If "this" doesn't work, use "snare".
+  	playAll("snare"); // "snare".
     console.log("snare loaded");
 });
 
 //KICK
 var kick = new Howl({ 
   src: ['assets/audio/kick-mm.mp3'],
-    
     html5:true,
-    // preload:true, //may need to remove later
-    // loop:1,
         sprite:{
-            kick:[0,10000]//add true if broken
+            kick:[0,10000]
         }
 });
 kick.on('load', function(){
-    playAll("kick"); //If "this" doesn't work, use "kick".
+    playAll("kick"); // "kick".
     console.log("kick loaded");
 });
 
 //HATS
 var hats = new Howl({ 
   src: ['assets/audio/hats-mm.mp3'],
-    
     html5:true,
-    // preload:true, //may need to remove later
-    // loop:1,
+    volume:0,
         sprite:{
-            hats:[0,10000]//add true if broken
+            hats:[0,10000]
         }
 });
 hats.on('load', function(){
-    playAll("hats"); //If "this" doesn't work, use "hats".
+    playAll("hats"); // "hats".
     console.log("hats loaded");
 });
 
 //PERCUSSION
 var percussion = new Howl({ 
   src: ['assets/audio/percussion-mm.mp3'],
-    
     html5:true,
-    // preload:true, //may need to remove later
-    // loop:1,
+    volume:0,
         sprite:{
-            percussion:[0,10000]//add true if broken
+            percussion:[0,10000]
         }
 });
 percussion.on('load', function(){
-    playAll("percussion"); //If "this" doesn't work, use "percussion".
+    playAll("percussion"); // "percussion".
     console.log("percussion loaded");
 });
 
 //ARPEGGIATOR
 var arp = new Howl({ 
   src: ['assets/audio/arp-mm.mp3'],
-    
     html5:true,
-    // preload:true, //may need to remove later
-    // loop:1,
+    volume:0,
         sprite:{
-            arp:[0,10000]//add true if broken
+            arp:[0,10000]
         }
 });
 arp.on('load', function(){
-    playAll("arp"); //If "this" doesn't work, use "arp".
+    playAll("arp"); // "arp".
     console.log("arp loaded");
 });
 
 function playAll(Howl){
     console.log("playAll");
-    //this.hasLoaded = true; //formerly .hasLoaded
+    //this.hasLoaded = true;
     //if this doens't work
     //set that variable manually
     if(Howl == "bass") {
@@ -127,7 +116,7 @@ function playAll(Howl){
     if(snare.hasLoaded && bass.hasLoaded && kick.hasLoaded && hats.hasLoaded && percussion.hasLoaded && arp.hasLoaded){
         // var htmlItem = document.getElementByID("music-player");
         // htmlItem.setAttribute("play", true);
-        console.log("playAll started");
+        // console.log("playAll started");
         bass.play("bass");
         snare.play("snare");
         kick.play("kick");
@@ -145,10 +134,6 @@ function restartAll(){
     hats.play("hats");
     percussion.play("percussion");
     arp.play("arp");
-    // kick.play("kick");
-    // hats.play("hats");
-    // arp.play("arp");
-    // percussion.play("percussion");
 }
 
 //----------------------END LOOP CONTROL-------------------------------//
