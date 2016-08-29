@@ -116,7 +116,7 @@ function playAll(Howl){
     if(snare.hasLoaded && bass.hasLoaded && kick.hasLoaded && hats.hasLoaded && percussion.hasLoaded && arp.hasLoaded){
         // var htmlItem = document.getElementByID("music-player");
         // htmlItem.setAttribute("play", true);
-        // console.log("playAll started");
+        console.log("playAll started");
         bass.play("bass");
         snare.play("snare");
         kick.play("kick");
@@ -128,6 +128,7 @@ function playAll(Howl){
 }
 
 function restartAll(){
+    console.log("restarted");
 	bass.play("bass");
     snare.play("snare");
     kick.play("kick");
