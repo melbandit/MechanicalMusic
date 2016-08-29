@@ -10,36 +10,70 @@
 	<!-- TYPOGRAPHY -->
 </head>
 <body>
-	<!-- <div class="sectionOneOverlay">
-		<button class="open">
-			<img src="assets/img/open-Sign.png">
-		</button>
-	</div> -->
 
-	<h1>Mechanical Music</h1>
+	<div class="sectionOneOverlay">
+		<!-- <button class="open"> -->
+		<div id="container">
+			<img class="open" src="assets/img/open-Sign.png">
+		</div>
+		<!-- </button> -->
+	</div>
 
-	<span> ARP</span>
-	<div id='myText'>rotation</div>
-	<span> Hats </span>
-	<div id='myText2'>rotation</div>
-	<span> Bass</span>
-	<div id='myText3'>rotation</div>
-	<span> Percussion</span>
-	<div id='myText4'>rotation</div>
-	<span> Snare</span>
-	<div id='myText5'>rotation</div>
+	<div class="sectionOne">
+		<div class="text">
+			<svg>
+				<defs>
+					<mask id="mask" x="0" y="0" width="100%" height="100%" >
+					<!-- alpha rectangle -->
+					<!-- rectángulo alfa -->
+					<rect id="alpha" x="0" y="0" width="100%" height="100%"/>
+					<!-- All text that you want -->
+					<!-- Coloca todo el texto que necesites -->
+					<text id="title" x="50%" y="0" dy="1.58em">SPIN THE TRACK</text>
+					<!--        <text id="subtitle" x="50%" y="0" dy="9.8em">Use it please!</text>-->
+					</mask>
+				</defs>
+			<!-- Apply color here! -->
+			<!-- Color aquí -->
+				<rect id="base" x="0" y="0" width="100%" height="100%"/>
+			</svg>
+		</div>
+		<section class="intro"></section>
 
-	<img id="gear" src="assets/img/Outline_red4.png" title="ARP">
+		<!--<p class="clip-text">SPIN THE TRACK</p>-->
+		<p>Each gear has unique sounds, mix them to make them your own.</p>
+	</div>
+	<div class="container">
+		<h1>Mechanical Music</h1>
 
-	<img id="gear2" src="assets/img/gear3_03.png" title="Hats">
+			<span> ARP</span>
+			<div id='myText'>rotation</div>
+			<span> Hats </span>
+			<div id='myText2'>rotation</div>
+			<span> Bass</span>
+			<div id='myText3'>rotation</div>
+			<span> Percussion</span>
+			<div id='myText4'>rotation</div>
+			<span> Snare</span>
+			<div id='myText5'>rotation</div>
 
-	<img id="gear3" src="assets/img/gear4_06.png" title="Bass">
+		<div class="gear-container">
 
-	<img id="gear4" src="assets/img/gear3_03.png" title="Percussion">
+			<img id="gear" src="assets/img/gear2_03.png" title="ARP">
 
-	<img id="gear5" src="assets/img/gear3_03.png" title="Snare">
+			<img id="gear2" src="assets/img/gear1_03.png" title="Hats">
 
-	<div>Chrome Recommended</div>
+			<img id="gear3" src="assets/img/gear4_03.png" title="Bass">
+
+			<img id="gear4" src="assets/img/gear3_03.png" title="Percussion">
+
+			<img id="gear5" src="assets/img/gear5_01.png" title="Snare">
+			
+		</div>
+	</div>
+
+	<footer><div class="browser">Chrome Recommended</div></footer>
+
 	
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="assets/js/howler.js"></script>

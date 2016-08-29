@@ -1,31 +1,48 @@
+/* ==========================
+        .open
+========================== */
+$(".open").on("click", function(){
+    $(".sectionOneOverlay").addClass('move-up');
+});
+
+/* ==========================
+        .text
+========================== */
+$(".text").on("click", function(){
+    $(".sectionOne").addClass('move-up');
+});
+
+/*=================================================================
+                            gear(s)
+=================================================================*/
 //Melissa Updating volume
 updateVolumeArp = function(value) {
-  //alert('before update volume:', arp.volume);
-  arp.volume(value);
-  //alert('after update volume:', arp.volume);
+    //alert('before update volume:', arp.volume);
+    arp.volume(value);
+    //alert('after update volume:', arp.volume);
 };
 updateVolumeHats = function(value) {
-  //alert('before update volume:', hats.volume);
-  hats.volume(value);
-  //alert('after update volume:', hats.volume);
+    //alert('before update volume:', hats.volume);
+    hats.volume(value);
+    //alert('after update volume:', hats.volume);
 };
 updateVolumeBass = function(value) {
-  //alert('before update volume:', bass.volume);
-  bass.volume(value);
-  //alert('after update volume:', bass.volume);
+    //alert('before update volume:', bass.volume);
+    bass.volume(value);
+    //alert('after update volume:', bass.volume);
 };
 updateVolumePercussion = function(value) {
-  //alert('before update volume:', bass.volume);
-  percussion.volume(value);
-  //alert('after update volume:', bass.volume);
+    //alert('before update volume:', bass.volume);
+    percussion.volume(value);
+    //alert('after update volume:', bass.volume);
 };
 updateVolumeSnare = function(value) {
-  //alert('before update volume:', bass.volume);
-  snare.volume(value);
-  //alert('after update volume:', bass.volume);
+    //alert('before update volume:', bass.volume);
+    snare.volume(value);
+    //alert('after update volume:', bass.volume);
 };
 
-//============ gear ========
+//============ #gear ========
 
 Draggable.create("#gear",{
     type: "rotation",
@@ -44,7 +61,7 @@ function Calc(){
 
 
 
-//============ gear2 ==========
+//============ #gear2 ==========
 
 Draggable.create("#gear2",{
     type: "rotation",
@@ -62,7 +79,7 @@ function Calc2(){
 };
 
 
-//============ gear3 =========
+//============ #gear3 =========
 
 Draggable.create("#gear3",{
     type: "rotation",
@@ -80,7 +97,7 @@ function Calc3(){
 };
 
 
-//============ gear4 =========
+//============ #gear4 =========
 
 Draggable.create("#gear4",{
     type: "rotation",
@@ -98,7 +115,7 @@ function Calc4(){
 };
 
 
-//============ gear5 =========
+//============ #gear5 =========
 
 Draggable.create("#gear5",{
     type: "rotation",
@@ -114,7 +131,9 @@ function Calc5(){
     document.getElementById("myText5").innerHTML= V;
     updateVolumeSnare(V);
 };
-
+/*=================================================================
+                           end of gear(s)
+=================================================================*/
 
 
 
