@@ -30,38 +30,16 @@
     opacity: 0.45;
 }
 
-// body {
-//   background-color: #323232;
-//   margin: 0;
-//   padding: 9em 0 0 0;
-// }
-
 .content {
     background-color: #0f1131;
-    font-family: 'Lato',sans-serif;  
-    text-align: center;  
-    //background-color: #2d55aa;
-    text-align: center;
     min-height: 70vh;
     margin: -.1em 0 0 0;
     padding: 1em;
-    color: #eee;
-    font-size: 2em;
-    font-weight: 300;
+    // color: #eee;
     opacity: 0.45;
-}
-.content{font-size: 1em;}
-
-.content h1 {
-    margin-top:-1.3em;
-    font-weight: 100;
-    font-size: 5em;
-    user-select:none;
-    cursor: default;
 }
 
 /*prevent many large-by-comparison ripples by shrinking the height*/
 @media (max-width:50em){
-    .content h1{font-size: 12vmax}
     .editorial{height:17vw;}
 }
