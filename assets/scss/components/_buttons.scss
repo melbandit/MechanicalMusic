@@ -11,6 +11,13 @@ span{
 	// animation-direction: reverse; //alternate
 	animation-direction: alternate; //alternate
 	animation-timing-function: ease-in-out;
+	// .hover-gear{
+	// 	float: left;
+	// 	transition: all 0.3s ease-in-out;
+	// 	&:hover{
+	// 		transform: scale(1.5);
+	// 	}
+	// }
 	#gear{
 		width: 	20%; 
 	//	height: 20%;
@@ -20,6 +27,10 @@ span{
 	#gear2{
 		width: 	20%; 
 	//	height: 20%;
+		transition: all 0.3s ease-in-out;
+		&:hover{
+			transform: scale(2);
+		}
 	}
 
 	#gear3{
