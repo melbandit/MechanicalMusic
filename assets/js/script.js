@@ -12,6 +12,37 @@ $(".text").on("click", function(){
     $(".sectionOne").addClass('move-up');
 });
 
+/* ==========================
+        _waves
+========================== */
+//var value;
+//var value = 0.6;
+updateWaves = function(value){
+    console.log(value);
+    var element = document.getElementById("waves");
+    if(value > 0.5){
+        console.log("larger than 0.5");
+        element.setAttribute("class", "parallax_slower parallax");
+        element.setAttribute("class", "parallax");
+        //below does not work
+        // $('.waves').addClass('parallax');
+        // $('.waves').removeClass('parallax_slower');
+    }
+    if(value < 0.5){
+        console.log("less than 0.5");
+        element.setAttribute("class", "parallax parallax_slower");
+        element.setAttribute("class", "parallax_slower");
+        // //below does not work
+        // $('.waves').removeClass('parallax_slower');
+        // $('.waves').addClass('parallax');
+    }
+};
+
+// $('img#gear').on("click", function(){
+//     $('.waves').addClass('parallax');
+//     $('.waves').removeClass('parallax_slower');
+// });
+
 /*=================================================================
                             gear(s)
 =================================================================*/
@@ -57,6 +88,7 @@ function Calc(){
     var R = (this.rotation/360).toFixed(2) ;
     document.getElementById("myText").innerHTML= R ;
     updateVolumeArp(R);
+    updateWaves(R);
 };
 
 
