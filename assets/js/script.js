@@ -8,7 +8,7 @@ $(".open").on("click", function(){
 /* ==========================
         .text
 ========================== */
-$(".text").on("click", function(){
+$(".continue").on("click", function(){
     $(".secondary").addClass('move-up');
 });
 
