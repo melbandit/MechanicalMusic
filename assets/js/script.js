@@ -2,14 +2,14 @@
         .open
 ========================== */
 $(".open").on("click", function(){
-    $(".sectionOneOverlay").addClass('move-up');
+    $(".primary").addClass('move-up');
 });
 
 /* ==========================
         .text
 ========================== */
 $(".text").on("click", function(){
-    $(".sectionOne").addClass('move-up');
+    $(".secondary").addClass('move-up');
 });
 
 /* ==========================
