@@ -64,27 +64,62 @@
 	z-index: 10;
 	
 	.text-body {
+		width: 80%;
+		margin: 237px auto;
+		line-height: 1.282;
+		font-size: 1.3em;
 
-	 	width: 60%;
-	 	margin: 237px auto;
-	 	line-height: 1.282;
-
-	 	@include bp-md {
+	 	@include bp-sm {
+	 		width: 50%;
 	 		font-size: 1.5em;
 	 	}
-
-	 	@include bp-lg {
-	 		font-size: 1.75em;
-	 	}
-
 	}
 }
 
 
-//--------------------Hello! Peter did this part ;-)---------------------------//
+//--------------------Continue into the machine---------------------------//
 
 .continue {
+	margin: 450px auto;
+	position: relative;
+	// border: 1px solid red;
+	min-width: 210px;
 
+	@include bp-sm {
+		max-width: 310px;
+	}
+}
+
+.open-arrow {
+	position: absolute;
+	top: -51px;
+	left: 29px;
+	width: 18%;
+	// @include bp-sm {
+	//    width: 18%;
+	// }
+}
+
+.continue-container {
+	position: absolute;
+	top: -5px;
+	left: 87px;
+	
+
+	@include bp-sm {
+		width: 70%;
+	}
+
+	.continue-text {
+		font-size: 20px;
+	}
+}
+
+.continue-button {
+	width:80%;
+	// @include bp-sm {
+	// 	width: 80%;
+	// }
 }
 
 //----------------------------------------------------------------------------//
