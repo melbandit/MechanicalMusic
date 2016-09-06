@@ -50,14 +50,14 @@
 	}
 	#open-container {
 		position: absolute;
-	    bottom: 100px;
+	    bottom: 10%;
 	    left: 36px;
-	    width: 550px;
+	    width: 100%;
 	    margin: auto;
 		.open{ //also in script.js
 			float: left;
-			width: 30%;
-		    height: 30%;
+			width: 20%;
+		    // height: 30%;
 			text-decoration: none;
 			-webkit-transition: all 1.5s;
 			-moz-transition: all 1.5s;
