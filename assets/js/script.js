@@ -1,6 +1,14 @@
 /* ==========================
         .open
 ========================== */
+$(".pull-reveal").on("click", function(){
+    $(".sectionTwo").removeClass('move-up');
+});
+
+
+/* ==========================
+        .open
+========================== */
 $(".open").on("click", function(){
     $(".primary").addClass('move-up');
 });
