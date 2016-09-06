@@ -15,8 +15,9 @@
  //    background: black url(../images/eiffel.jpg) center top no-repeat;
  //    background-size: cover;
  //    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,30% 100%);
- 		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
-		clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 	.main-logo-container{
 		
 		.logo{
