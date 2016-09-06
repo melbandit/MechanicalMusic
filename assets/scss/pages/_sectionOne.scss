@@ -1,3 +1,13 @@
+body{
+	overflow: hidden;
+}
+.pull-reveal{
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+
 .spin-button-container{
 	position: absolute;
     width: 275px;
@@ -19,5 +29,15 @@
 	overflow: hidden;
 	.gear-container{
 		
+	}
+}
+
+.pipe{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	.pipe-smoke{
+		margin-bottom: -44px;
+		margin-left: 15px;
 	}
 }
