@@ -53,10 +53,11 @@ body{
 	position: relative;
 	width: 90%;
 	margin: 0 auto;
+	max-width: 380px;
+	bottom: 380px;
 	
 	#belt{
 		position: absolute;
-		bottom: 0;
 		width: 100%;
 	}
 }
