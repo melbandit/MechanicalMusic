@@ -39,6 +39,7 @@ body{
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: 10;
 	.pipe-smoke{
 		margin-bottom: -44px;
 		margin-left: 15px;
@@ -53,11 +54,39 @@ body{
 	position: relative;
 	width: 90%;
 	margin: 0 auto;
-	max-width: 380px;
-	bottom: 380px;
+	max-width: 1100px;
+	bottom: 290px;
 	
 	#belt{
-		position: absolute;
+		// position: relative;
 		width: 100%;
 	}
+
+	#conveyor__gear-lg {
+		position: absolute;
+		left: 69%;
+		bottom: 1rem;
+		width: 28%;
+		// max-width: 215px;
+
+		@include bp-sm {
+			top:1.5rem;
+		}
+	}
+
+	#conveyor__gear-sm {
+		position: absolute;
+		left: 2%;
+		bottom: 0.5rem;
+		width: 20%;
+		// max-width:153px;
+
+		// @include bp-sm {
+		// 	// top:92px;
+		// }
+	}
 }
+
+
+
+
