@@ -107,11 +107,11 @@
 		width: 80%;
 		margin: 237px auto;
 		line-height: 1.282;
-		font-size: 1.3em;
+		font-size: 1.2em;
 
 	 	@include bp-sm {
 	 		width: 50%;
-	 		font-size: 1.5em;
+	 		font-size: 1.7em;
 	 	}
 	}
 }
@@ -120,35 +120,27 @@
 //--------------------Continue into the machine---------------------------//
 
 .continue {
-	margin: 450px auto;
+	margin: 500px auto;
 	position: relative;
-	// border: 1px solid red;
-	min-width: 210px;
-
-	@include bp-sm {
-		max-width: 310px;
-	}
+	width: 50%;
 }
 
 .open-arrow {
 	position: absolute;
-	top: -51px;
-	left: 29px;
-	width: 18%;
-	// @include bp-sm {
-	//    width: 18%;
-	// }
+	top: -37px;
+	left: -29%;
+	width: 55px;
 }
 
 .continue-container {
 	position: absolute;
 	top: -5px;
-	left: 87px;
+	left: 30%;
+	width:200px;
 	
-
-	@include bp-sm {
-		width: 70%;
-	}
+	// @include bp-sm {
+	// 	width: 70%;
+	// }
 
 	.continue-text {
 		font-size: 20px;
