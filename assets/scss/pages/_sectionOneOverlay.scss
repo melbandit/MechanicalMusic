@@ -136,15 +136,15 @@
 .continue-container {
 	position: absolute;
 	top: -5px;
-	left: 30%;
-	width:200px;
+	left: 15%;
+	width: 230px;
 	
-	// @include bp-sm {
-	// 	width: 70%;
-	// }
+	@include bp-sm {
+		left:30%;
+	}
 
 	.continue-text {
-		font-size: 20px;
+		font-size: 23.5px;
 	}
 }
 
