@@ -2,7 +2,7 @@
         .open
 ========================== */
 $(".pull-reveal").on("click", function(){
-    $(".sectionTwo").removeClass('move-up');
+    $(".sectionTwo").removeClass('move-down');
 });
 
 
