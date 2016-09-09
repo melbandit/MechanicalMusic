@@ -15,8 +15,9 @@
  //    background: black url(../images/eiffel.jpg) center top no-repeat;
  //    background-size: cover;
  //    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,30% 100%);
- 		-webkit-clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
-		clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+	//box-shadow: 20px 20px 20px 1px rgba(0, 0, 0, 0.5);
 	.main-logo-container{
 		
 		.logo{
@@ -41,7 +42,7 @@
 		.sponsorship{
 			position: absolute;
 			right: 36px;
-			bottom: 200px;
+			bottom: 20%;
 			transform: rotate(-7deg);
 			color: white;
 			font-size: 1.2em;
@@ -49,14 +50,14 @@
 	}
 	#open-container {
 		position: absolute;
-	    bottom: 100px;
+	    bottom: 10%;
 	    left: 36px;
-	    width: 550px;
+	    width: 100%;
 	    margin: auto;
 		.open{ //also in script.js
 			float: left;
-			width: 30%;
-		    height: 30%;
+			width: 20%;
+		    // height: 30%;
 			text-decoration: none;
 			-webkit-transition: all 1.5s;
 			-moz-transition: all 1.5s;
