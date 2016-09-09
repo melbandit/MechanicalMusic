@@ -1,8 +1,8 @@
 @keyframes wiggle_x_rotate{
 	0%		{transform: rotate(0deg);}
-	25% 	{transform: rotate(-1deg);}//left starts and stops at same pt
+	25% 	{transform: rotate(-2deg);}//left starts and stops at same pt
 	50%		{transform: rotate(0deg);}
-	75% 	{transform: rotate(-1deg);}
+	75% 	{transform: rotate(-2deg);}
 	100% 	{transform: rotate(0deg);}
 }
 

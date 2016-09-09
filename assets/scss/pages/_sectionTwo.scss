@@ -6,6 +6,8 @@
 // }
 .pull-reveal{
 	position: absolute;
+	transform-origin: top;
+	animation: wiggle_x_rotate 3s infinite linear;
 	top: 0px;
 	right: 20px;
 	z-index: 10;
