@@ -4,12 +4,12 @@ body{
 .spin-button-container{
 	position: absolute;
     width: 275px;
-    top: 60%;
+    top: 68%;
     right: 10%;
-    z-index: 4;
+    z-index: 12;
     .directions{
     	text-align: right;
-    	padding-left: 85px;
+    	padding-left: 65px;
     	font-size: 1.2em;
     }
 }
@@ -53,10 +53,16 @@ body{
 
 .conveyor-belt{
 	position: relative;
+	left: 50%;
+  	top: 90%;
 	width: 90%;
-	margin: 0 auto;
+	transform: translate(-50%, -50%);
 	max-width: 1100px;
-	bottom: 290px;
+
+	// position: relative;
+	// width: 90%;
+	// margin: 0 auto;
+	// bottom: 290px; //590px correct
 	
 	#belt{
 		// position: relative;
@@ -77,9 +83,12 @@ body{
 
 	#conveyor__gear-sm {
 		position: absolute;
-		left: 2%;
-		bottom: 0.5rem;
+		// left: 2%;
+		// bottom: 0.5rem;
 		width: 20%;
+
+		left: 3%;
+    	bottom: 0.8rem;
 		// max-width:153px;
 
 		// @include bp-sm {

@@ -89,31 +89,40 @@
 			<p class="directions">Each gear has a unique sound, mix them to make it our own.
 		</div>
 		
-
-		<svg class="waves-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 26 150 28" preserveAspectRatio="none">
-			<defs>
-				<path id="gentle-wave"
-					d="m -160,44.4 c 30,0 58,
-        			-18 87.7,-18 30.3,0 58.3,
-        			18 87.3,18 30,0 58,-18 88,
-        			-18 30,0 58,18 88,18 l 0,
-        			34.5 -351,0 z" />
-			</defs>
-			<g id="waves" class="parallax_slower">
-				<use xlink:href="#gentle-wave" x="50" y="0" fill="#402780"/>
-				<use xlink:href="#gentle-wave" x="50" y="3" fill="#3084c1"/>
-				<use xlink:href="#gentle-wave" x="50" y="6" fill="#502a23"/>
-				<use xlink:href="#gentle-wave" x="50" y="9" fill="#0f1131"/> 
-			</g>
-		</svg>
-		<div class="content"></div>
+		<div class="waves-container">
+			<svg class="waves-container__items" xmlns="http://www.w3.org/2000/svg" viewBox="0 26 150 28" preserveAspectRatio="none">
+				<defs>
+					<path id="gentle-wave"
+						d="m -160,44.4 c 30,0 58,
+	        			-18 87.7,-18 30.3,0 58.3,
+	        			18 87.3,18 30,0 58,-18 88,
+	        			-18 30,0 58,18 88,18 l 0,
+	        			34.5 -351,0 z" />
+				</defs>
+				<g id="waves" class="parallax_slower">
+					<use xlink:href="#gentle-wave" x="50" y="0" fill="#402780"/>
+					<use xlink:href="#gentle-wave" x="50" y="3" fill="#3084c1"/>
+					<use xlink:href="#gentle-wave" x="50" y="6" fill="#502a23"/>
+					<use xlink:href="#gentle-wave" x="50" y="9" fill="#0f1131"/> 
+				</g>
+			</svg>
+			<div class="content"></div>
+		</div> <!-- end of .waves -->
 
 		<div class="pipe">
 			<div class="pipe-smoke">
 				<img src="assets/img/smoke.gif">
 			</div>
-			<img src="assets/img/steam-pipe_14.png">
+			<img class="pipe__item" src="assets/img/steam-pipe_14.png">
 		</div>
+
+		<div class="conveyor-belt">
+			<img id="belt" src="assets/img/final/Belt-and-Switches.png">
+ 			<img id="conveyor__gear-sm" src="assets/img/final/smallGearBelt.png">
+			<img id="conveyor__gear-lg" src="assets/img/final/bigGearBelt.png">
+		</div>
+
+	</div> <!-- end of .sectionOne .container -->
 
 		<div class="sectionTwo move-down">
 			<div class="second-logo-container">
@@ -146,14 +155,6 @@
 			</div>
 
 		</div><!-- END of .sectionTwo -->
-
-		<div class="conveyor-belt">
-			<img id="belt" src="assets/img/final/Belt-and-Switches.png">
- 			<img id="conveyor__gear-sm" src="assets/img/final/smallGearBelt.png">
-			<img id="conveyor__gear-lg" src="assets/img/final/bigGearBelt.png">
-		</div>
-
-	</div> <!-- end of .container -->
 
 	<footer><div class="browser">Chrome Recommended</div></footer>
 
