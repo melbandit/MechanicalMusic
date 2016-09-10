@@ -1,10 +1,9 @@
 /* ==========================
-        .open
+        .pull-reveal
 ========================== */
 $(".pull-reveal").on("click", function(){
     $(".sectionTwo").removeClass('move-down');
 });
-
 
 /* ==========================
         .open
@@ -13,11 +12,47 @@ $(".open").on("click", function(){
     $(".primary").addClass('move-up');
 });
 
+var $open_container = document.getElementById("open-container");
+var $openLogo= document.querySelector(".open");
+
+$openLogo.addEventListener("mouseover", function(){
+    
+    if( $open_container.getAttribute("id")== "open-container"){
+        $openLogo.src = "assets/img/open-Sign.png";
+        $openLogo.style.transitionDuration = "1s";
+    }
+});
+
+$openLogo.addEventListener("mouseout", function(){
+    $openLogo.src = "assets/img/openSignBlank.png";
+    $openLogo.style.transitionDuration = "1.5s";
+});
 /* ==========================
         .text
 ========================== */
 $(".continue").on("click", function(){
     $(".secondary").addClass('move-up');
+});
+
+
+/* ==========================
+        .continue
+========================== */
+
+var $continue_container = document.querySelector(".continue-container");
+var $openArrowLogo= document.querySelector(".open-arrow");
+
+$continue_container.addEventListener("mouseover", function(){
+    
+    if( $continue_container.getAttribute("class")== "continue-container"){
+        $openArrowLogo.src = "assets/img/open-arrow.png";
+        $openArrowLogo.style.transitionDuration = "1s";
+    }
+});
+
+$continue_container.addEventListener("mouseout", function(){
+    $openArrowLogo.src = "assets/img/openArrowBlank.png";
+    $openArrowLogo.style.transitionDuration = "1.5s";
 });
 
 /* ==========================
