@@ -60,7 +60,7 @@
 .call-to-action{
 	position: relative;
 	width: 85%;
-	top: 40%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 
@@ -80,18 +80,28 @@
 }
 
 .sponsorship__click {
-	width: 75%;
+	// border:1px solid blue;
 	float: left;
 	margin-top: 8px;
+
 	.sponsorship__click--title {
-		width: 89%;
 		color: #fff;
 		font-size: 2em;
 		font-weight: 800;
 		line-height: 0.7em;
-		span{
-			font-size: 0.31em;
-			font-weight: 400;
+
+		@include bp-sm {
+			font-size: 2.7em;
+			line-height: 1em;
+		}
+	}
+
+	.sponsorship__click--subtitle {
+		font-size: 0.31em;
+		font-weight: 400;
+
+		@include bp-sm {
+			font-size: 0.5em;
 		}
 	}
 

@@ -32,3 +32,23 @@ $breakpoint-lg: 1440px;
 			@content;
 		}
 }
+
+//Clearfix ====================================
+
+
+@mixin clearfix {
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//Usage:
+.clearfix {
+     @include clearfix;
+}
