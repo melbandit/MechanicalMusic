@@ -2,6 +2,7 @@
 
 $breakpoint-sm: 768px;
 $breakpoint-md: 1024px;
+$breakpoint-mdlg: 1200px;
 $breakpoint-lg: 1440px;
 
 
@@ -16,6 +17,12 @@ $breakpoint-lg: 1440px;
 
 @mixin bp-md  {
 			@media only screen and(min-width: $breakpoint-md){
+			@content;
+		}
+}
+
+@mixin bp-mdlg  {
+			@media only screen and(min-width: $breakpoint-mdlg){
 			@content;
 		}
 }

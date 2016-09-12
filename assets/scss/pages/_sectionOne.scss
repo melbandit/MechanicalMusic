@@ -12,7 +12,7 @@ body{
 .go-back__item{
 	width: 10%;
 	min-width: 100px;
-	max-width: 220px;
+	max-width: 150px;
 	height: auto;
 }
 .spin-button-container{
@@ -52,18 +52,33 @@ body{
 
 .pipe{
 	position: absolute;
+	width: 20%;
 	bottom: 0;
 	left: 0;
 	z-index: 10;
-	.pipe-smoke{
-		margin-bottom: -44px;
-		margin-left: 15px;
-		.pipe-smoke__item{
+	min-width: 200px;
+   	max-width: 300px;
 
+	.pipe-smoke{
+		position: absolute;
+		bottom: 100%;
+		left: 15%;
+    	transform: translateY(15%);
+    	@include bp-mdlg{
+    		left: 22%;
+    		transform: translateY(22%);
+    	}
+		// width: 20%;
+		.pipe-smoke__item{
+			width: 100%;
+    		// min-width: 200px;
+    		// max-width: 300px;
 		}
 	}
-	.pipe-item{
-		
+	.pipe__item{	
+		width: 100%;
+    	// min-width: 200px;
+    	// max-width: 300px;
 	}
 }
 
