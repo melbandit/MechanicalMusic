@@ -110,9 +110,9 @@
 	height: 100%;
 	background-color: rgba(15, 17, 49, 0.70);
 	z-index:30;
-	-webkit-transition: all 2.5s cubic-bezier(.17,.67,1,1.23);
-	-moz-transition: all 2.5s cubic-bezier(.17,.67,1,1.23);
-	transition: all 2.5s cubic-bezier(.17,.67,1,1.23);
+	-webkit-transition: all 2.5s ease-in-out;
+	-moz-transition: all 2.5s ease-in-out;
+	transition: all 2.5s ease-in-out;
 }
 
 .text{//also in script.js

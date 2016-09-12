@@ -1,4 +1,17 @@
 /* ==========================
+        .go-back
+========================== */
+$(".go-back.sectionTwo__item").on("click", function(){
+    $(".sectionTwo").addClass('move-down');
+});
+$(".go-back.sectionOne__item").on("click", function(){
+    $(".sectionOneOverlay.secondary").removeClass('move-up');
+});
+// $(".go-back.sectionOneOverlay.secondary").on("click", function(){
+//     $(".sectionOneOverlay").removeClass('move-up');
+// });
+
+/* ==========================
         .pull-reveal
 ========================== */
 $(".pull-reveal").on("click", function(){
