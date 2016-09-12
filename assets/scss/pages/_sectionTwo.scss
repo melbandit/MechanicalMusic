@@ -43,9 +43,12 @@
 	}
 	.call-to-action{
 		position: absolute;
-		top: 0;
+		top: 20px;
 		.call-to-action__desc{
 			width: 60%;
+			//padding-top: 5%;
+			margin-left: auto;
+   		 	margin-right: auto;
 			font-size: 2.8em;
 			font-weight: 400;
 		}	
