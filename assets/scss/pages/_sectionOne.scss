@@ -1,6 +1,20 @@
 body{
 	overflow: hidden;
 }
+.go-back.sectionOne__item{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 20px;
+	z-index: 3;
+}
+.go-back__item{
+	width: 10%;
+	min-width: 100px;
+	max-width: 220px;
+	height: auto;
+}
 .spin-button-container{
 	position: absolute;
     width: 275px;
