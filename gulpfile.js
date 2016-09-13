@@ -45,7 +45,7 @@ gulp.task('scss', function(){
 });
 
 gulp.task('server', ['scss', 'browser-sync'], function() {
-	gulp.watch('assets/scss/*.scss', ['scss', 'minify-css']);
+	gulp.watch('assets/scss/**/*.scss', ['scss', 'minify-css']);
 	gulp.watch(['**/*.html', 'assets/css/**/*.css']).on('change', browserSync.reload);
 })
 

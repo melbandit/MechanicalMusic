@@ -24,6 +24,7 @@
 }
 .move-down{
 	transform: translateY(-150%);
+	transition: all 2.5s ease-out;
 }
 
 .sectionTwo {
@@ -83,12 +84,15 @@
 	// border:1px solid blue;
 	float: left;
 	margin-top: 8px;
+	text-decoration: none;
+	color: white;
 
 	.sponsorship__click--title {
 		color: #fff;
 		font-size: 2em;
 		font-weight: 800;
 		line-height: 0.7em;
+		margin-right: 10px;
 
 		@include bp-sm {
 			font-size: 2.7em;
