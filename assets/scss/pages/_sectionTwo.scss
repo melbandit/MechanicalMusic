@@ -61,31 +61,36 @@
 .call-to-action{
 	position: relative;
 	width: 85%;
-	top: 45%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 
 	@include bp-sm {
 		width:60%;
+		top:350px;
 	}	
 
 }
 
 .sponsorship{
-	width: 80%;
+	width: 70%;
 	margin: 15px auto;
+	cursor: pointer;
+	// border: 1px solid purple;
 
 	@include bp-sm {
-		width: 58%;
+		max-width: 380px;
 	}
 }
 
 .sponsorship__click {
-	// border:1px solid blue;
 	float: left;
-	margin-top: 8px;
-	text-decoration: none;
-	color: white;
+	margin: 8px auto;
+	// width:186px;
+
+	@include bp-lg {
+		width: 67%;
+	}
 
 	.sponsorship__click--title {
 		color: #fff;
@@ -93,15 +98,23 @@
 		font-weight: 800;
 		line-height: 0.7em;
 		margin-right: 10px;
+		// font-size: 2.6em;
+		// line-height: 1em;
+		// border: 1px solid green;
 
 		@include bp-sm {
-			font-size: 2.7em;
+			font-size: 2.6em;
+			line-height: 1em;
+		}
+
+		@include bp-lg {
+			font-size: 2.8em;
 			line-height: 1em;
 		}
 	}
 
 	.sponsorship__click--subtitle {
-		font-size: 0.31em;
+		font-size: 0.61em;
 		font-weight: 400;
 
 		@include bp-sm {
@@ -113,8 +126,11 @@
 
 .sponsorship__logo{
 	float: left;
-	width: 20%;
-	max-width: 80px;
+	width: 50px;
+
+	@include bp-md {
+		width: 70px;
+	}
 
 	.sponsorship__logo--spotify {
 		width: 100%;
@@ -122,21 +138,29 @@
 }
 
 .call-to-action__desc{
-	width: 80%;
-	font-size: 1em;
+	width: 95%;
+	font-size: 1.2em;
 	font-weight: 400;
 	margin: 0 auto;
 	line-height: 1.3em;
+	max-width: 680px;
 
 	@include bp-sm {
+		width: 100%;
 		font-size: 1.4em;
+		line-height: 1.3em;
+	}
+
+	@include bp-sm {
+		width: 100%;
+		font-size: 1.6em;
 		line-height: 1.3em;
 	}
 }
 
 .social {
 	width: 200px;
-	margin: 100px auto;
+	margin: 30px auto;
 
 	.social__icons {
 		width: 100%;
