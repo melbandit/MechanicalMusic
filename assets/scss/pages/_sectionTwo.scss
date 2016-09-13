@@ -24,7 +24,7 @@
 }
 .move-down{
 	transform: translateY(-150%);
-	transition: all 2.5s ease-out;
+	transition: all 2s ease-out;
 }
 
 .sectionTwo {
@@ -42,15 +42,19 @@
 	// -webkit-clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
 	// clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
 	.second-logo-container{
-		width: 300%;
-		max-width: 1220px;
+		width: 1220px;
+		//max-width: 1220px;
 		position: absolute;
 		right: 0;
+		transition: width 1s;
+		//max-width: 200%;
 
 		@include bp-sm {
-			width: 100%;
-			max-width: 100%;
+			width: 150%;
 			height: auto;
+		}
+		@include bp-md{
+			width: 100%;
 		}
 		.logo{
 			width: 100%;
@@ -64,6 +68,7 @@
 	top: 35%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	transition: width 1s, top 1s;
 
 	@include bp-sm {
 		width:60%;
@@ -73,23 +78,31 @@
 }
 
 .sponsorship{
-	width: 70%;
+	width: 237px;
 	margin: 15px auto;
 	cursor: pointer;
+	transition: width 1s;
 	// border: 1px solid purple;
 
 	@include bp-sm {
-		max-width: 380px;
+		width: 290px;
+	}
+	@include bp-md {
+		width: 310px;
+	}
+	@include bp-lg {
+		width: 330px;
 	}
 }
 
 .sponsorship__click {
 	float: left;
 	margin: 8px auto;
+
 	// width:186px;
 
 	@include bp-lg {
-		width: 67%;
+		//width: 67%;
 	}
 
 	.sponsorship__click--title {
@@ -98,6 +111,7 @@
 		font-weight: 800;
 		line-height: 0.7em;
 		margin-right: 10px;
+		transition: font-size 1s;
 		// font-size: 2.6em;
 		// line-height: 1em;
 		// border: 1px solid green;
@@ -116,6 +130,7 @@
 	.sponsorship__click--subtitle {
 		font-size: 0.61em;
 		font-weight: 400;
+		transition: font-size 1s;
 
 		@include bp-sm {
 			    font-size: 0.8em;
@@ -127,6 +142,7 @@
 .sponsorship__logo{
 	float: left;
 	width: 50px;
+	transition: width 1s;
 
 	@include bp-md {
 		width: 70px;
@@ -144,6 +160,7 @@
 	margin: 0 auto;
 	line-height: 1.3em;
 	max-width: 680px;
+	transition: width 1s, font-size 1s;
 
 	@include bp-sm {
 		width: 100%;
@@ -161,6 +178,7 @@
 .social {
 	width: 200px;
 	margin: 30px auto;
+	transition: width 1s;
 
 	.social__icons {
 		width: 100%;
