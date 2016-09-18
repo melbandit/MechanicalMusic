@@ -104,7 +104,6 @@
 	@include bp-lg {
 		//width: 67%;
 	}
-
 	.sponsorship__click--title {
 		color: #fff;
 		font-size: 2em;
@@ -112,6 +111,7 @@
 		line-height: 0.7em;
 		margin-right: 10px;
 		transition: font-size 1s;
+		text-decoration: none;
 		// font-size: 2.6em;
 		// line-height: 1em;
 		// border: 1px solid green;
@@ -131,12 +131,17 @@
 		font-size: 0.61em;
 		font-weight: 400;
 		transition: font-size 1s;
+		text-decoration: none;
 
 		@include bp-sm {
 			    font-size: 0.8em;
 		}
 	}
 
+}
+.sponsorship__click--link{
+	text-decoration: none;
+	color: white;
 }
 
 .sponsorship__logo{
